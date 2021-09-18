@@ -68,6 +68,15 @@ body {
   }
 }
 
+.js-accordion__title {
+  cursor: pointer;
+}
+
+/* Estilo dos botões do footer redes sociais*/
+.btn-footer__style a {
+  max-width: 140px;
+}
+
 /* accordion finish */
 
 @media (max-width: 767px) {
