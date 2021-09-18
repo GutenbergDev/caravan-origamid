@@ -10,6 +10,35 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+  <!-- Modal -->
+  <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Entre na Sua Conta</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label fw-bold">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-0">
+              <label for="exampleInputPassword1" class="form-label fw-bold">Senha</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+          </form>
+        </div>
+        <div class="d-flex flex-column m-3 mt-0 btn-modal__style">
+          <a href="#" class="btn btn-primary d-block mb-2 fs-5">Entrar na Conta</a>
+          <p class="mb-0 fs-6">Esqueceu a senha? <a class="text-primary text-decoration-none" href="#">Clique aqui.</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fecha Modal -->
+
   <nav class="navbar navbar-expand-md navbar-light bg-light px-md-5 px-4 fixed-top box-shadow">
     <a href="index.html" class="navbar-brand">
       <img src="./img/caravan.svg" alt="Caravan">
@@ -36,7 +65,7 @@
           <a class="nav-link fs-5" href="contato.html">Contato</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fs-5" href="#">Login</a>
+          <a class="nav-link fs-5" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</a>
         </li>
         <li class="nav-item">
           <a class="btn btn-outline-primary ms-md-2 fs-5" href="inscricao.html">Inscrição</a>

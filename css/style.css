@@ -73,6 +73,14 @@ body {
 }
 
 /* Estilo dos botões do footer redes sociais*/
+.btn-modal__style p {
+  color: rgb(88, 88, 88);
+}
+
+.btn-modal__style a {
+  max-width: 200px;
+}
+
 .btn-footer__style a {
   max-width: 140px;
 }
